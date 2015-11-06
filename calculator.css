@@ -1,0 +1,90 @@
+html body {
+    overflow: hidden;
+}
+
+.calculator.container {
+    width: 560px;
+    height: 0px;
+    margin: 0 auto;
+}
+
+.calculator.positioner {
+    width: 560px;
+    position: absolute;
+    top: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px;
+}
+
+.calculator.body {
+    border-radius:2%;
+}
+
+#ioBox {
+    display: block;
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 40px;
+    width: 480px;
+    height: 80px;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    border: 0px;
+    background: #F6F6F6;
+}
+
+.row {
+    margin-left: 26px;
+    margin-right: 26px;
+    text-align: center;
+}
+
+#fifth {
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline;
+    margin: 0px;
+    width: 114px;
+    height: 70px;
+    font-size: 30px;
+    background: white;
+    border: 0px;
+}
+
+button:hover {
+    background: #F3F3F3
+}
+
+
+button:focus {
+    outline: none;
+    background: #C0C0C0;
+
+}
+
+#_CE:hover {
+    background: #FFE0E0;
+}
+
+#_CE:focus {
+    background: #FF6666;
+}
+
+.operator:hover {
+    background: #FFE0BC;
+}
+
+.operator:focus {
+    background: #FFAA49;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
