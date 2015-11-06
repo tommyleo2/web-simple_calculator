@@ -44,7 +44,7 @@ window.onload = function() {
     }
     document.getElementById("_*").onclick = function() {
         var currentString = document.getElementById("ioBox").value;
-        currentString += '*';
+        currentString += '×';
         display(currentString);
     }
     document.getElementById("_1").onclick = function() {
@@ -103,6 +103,8 @@ window.onload = function() {
         var currentString = document.getElementById("ioBox").value;
         var tempString = currentString.split("÷");
         currentString = tempString.join("/");
+        tempString = currentString.split("×");
+        currentString = tempString.join("*");
         try {
             currentString = eval(currentString);
         }
