@@ -1,3 +1,7 @@
+* {
+    font-family: DejaVu Sans Mono;
+}
+
 html body {
     overflow: hidden;
 }
@@ -16,7 +20,7 @@ html body {
 
 .title {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     margin: 40px;
 }
 
@@ -24,18 +28,41 @@ html body {
     border-radius:2%;
 }
 
-#ioBox {
-    display: block;
-    margin: 0 auto;
+#screen {
     margin-top: 36px;
     margin-bottom: 40px;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 480px;
-    height: 80px;
-    font-size: 40px;
     color: black;
-    text-align: right;
     border: 0px;
     background: #F6F6F6;
+}
+
+#iBox {
+    padding-top: 10px;
+    height: 40px;
+    font-size: 30px;
+}
+
+#oBox {
+    height: 80px;
+    font-size: 40px;
+    text-align: right;
+}
+
+#screen p {
+    height: 30px;
+    width: 480px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .row {
@@ -51,6 +78,7 @@ html body {
 button {
     display: inline;
     margin: 0px;
+    padding: 0px;
     width: 114px;
     height: 70px;
     font-size: 30px;
@@ -59,21 +87,23 @@ button {
 }
 
 button:hover {
-    background: #F3F3F3
+    background: #E8E8E8
 }
 
 
 button:focus {
     outline: none;
-    background: #C0C0C0;
+}
 
+button:active {
+    background: #C0C0C0;
 }
 
 #_CE:hover {
     background: #FFE0E0;
 }
 
-#_CE:focus {
+#_CE:active {
     background: #FF6666;
 }
 
@@ -81,7 +111,7 @@ button:focus {
     background: #FFE0BC;
 }
 
-.operator:focus {
+.operator:active {
     background: #FFAA49;
 }
 
